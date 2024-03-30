@@ -9,63 +9,88 @@ import Background from '../../../public/Background.png';
 const SeconCardData = () => {
     return (
         <div className='flex flex-col justify-around md:flex-row'>
-            <div className='border-2 h-12 border-[#2C9CF0] w-8 mt-2 md:mt-0'>
-                <Image className='ml-2 mt-3' src={Icon} alt='icon' />
+            <div className="hidden md:block border-2 md:mt-[285px] lg:mt-[280px] ml-12 lg:ml-20 h-12 border-[#2C9CF0] w-8">
+                <Image className="ml-2 mt-3" src={Icon} alt="icon" />
             </div>
 
-            {/* Cards */}
+
+            {/* Cards responsive */}
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 items-center justify-center max-w-screen-xl mx-auto'>
                 {/* Card 1 */}
-                <div className='relative'>
-                    <Image src={Background} alt='background' />
-                    <div className='absolute bottom-0'>
-                        <div className="image flex justify-center items-center flex-col">
-                            <Image src={CradImage} alt="card" className="w-full p-1 h-[450px] mb-12 object-cover" />
-                            <h2 className="text-lg text-black capitalize font-semibold py-1 text-center">Las Vegas Aviators</h2>
+                <div className='relative '>
+                    <Image src={Background} alt='background' className='h-[670px]' />
+                    <div className='absolute bottom-0 mb-7'>
+                        <div className="image flex justify-center  items-center -py-20 flex-col">
+                            <Image src={CradImage} alt="card" className="w-full p-1 h-[470px]   object-cover" />
                         </div>
-                        <div className='space-y-1'>
-                            <p className="text-sm text-center text-black">Oct 15 |Sun| 4:30 PM</p>
+                        <div className=''>
+                            <h2 className="text-[17px] mb-1 text-black  capitalize font-semibold  text-center">Las Vegas Aviators</h2>
+
+                            <p className="text-sm text-center  text-black">Oct 15 |Sun| 4:30 PM</p>
                             <p className='opacity-60 text-center'>Las Vegas Ballpark, Las Vegas,</p>
                             <p className='opacity-60 text-center pb-8'>Nevada</p>
+
+
+                        </div>
+                        <div className='pl-4'>
+                            <button className='bg-black text-white px-12 text-sm py-2'>Take Flight Collection</button>
+
                         </div>
                     </div>
+
                 </div>
 
+
                 {/* Card 2 */}
-                <div className='relative'>
-                    <Image src={Background} alt='background' />
-                    <div className='absolute bottom-0'>
-                        <div className="image flex justify-center items-center flex-col">
-                            <Image src={CradImage2} alt="card" className="w-full p-1 h-[450px] mb-12  object-cover" />
-                            <h2 className="text-lg text-black capitalize font-semibold py-1 text-center">Sacramento River Cats</h2>
+                <div className='relative '>
+                    <Image src={Background} alt='background' className='h-[670px]' />
+                    <div className='absolute bottom-0 mb-7'>
+                        <div className="image flex justify-center  items-center -py-20 flex-col">
+                            <Image src={CradImage2} alt="card" className="w-full p-1 h-[470px]   object-cover" />
                         </div>
-                        <div className='space-y-1'>
-                            <p className="text-sm text-center text-black">Oct 15 |Sun| 4:30 PM</p>
+                        <div className=''>
+                            <h2 className="text-[17px] mb-1 text-black  capitalize font-semibold  text-center">Sacramento River Cats</h2>
+
+                            <p className="text-sm text-center  text-black">Oct 15 |Sun| 4:30 PM</p>
                             <p className='opacity-60 text-center'>Las Vegas Ballpark, Las Vegas,</p>
                             <p className='opacity-60 text-center pb-8'>Nevada</p>
+
+
+                        </div>
+                        <div className='pl-4'>
+                            <button className='bg-black text-white px-12 text-sm py-2'>Orange Collection</button>
+
                         </div>
                     </div>
+
                 </div>
 
                 {/* Card 3 */}
-                <div className='relative'>
-                    <Image src={Background} alt='background' />
-                    <div className='absolute bottom-0'>
-                        <div className="image flex justify-center items-center flex-col">
-                            <Image src={CradImage} alt="card" className="w-full p-1 h-[450px] mb-12  object-cover" />
-                            <h2 className="text-lg text-black capitalize font-semibold py-1 text-center">Las Vegas Aviators</h2>
+                <div className='relative '>
+                    <Image src={Background} alt='background' className='h-[670px]' />
+                    <div className='absolute bottom-0 mb-7'>
+                        <div className="image flex justify-center  items-center -py-20 flex-col">
+                            <Image src={CradImage} alt="card" className="w-full p-1 h-[470px]   object-cover" />
                         </div>
-                        <div className='space-y-1'>
-                            <p className="text-sm text-center text-black">Oct 15 |Sun| 4:30 PM</p>
+                        <div className=''>
+                            <h2 className="text-[17px] mb-1 text-black  capitalize font-semibold  text-center">Las Vegas Aviators</h2>
+
+                            <p className="text-sm text-center  text-black">Oct 15 |Sun| 4:30 PM</p>
                             <p className='opacity-60 text-center'>Las Vegas Ballpark, Las Vegas,</p>
                             <p className='opacity-60 text-center pb-8'>Nevada</p>
+
+
+                        </div>
+                        <div className='pl-4'>
+                            <button className='bg-black text-white px-12 text-sm py-2'>Take Flight Collection</button>
+
                         </div>
                     </div>
+
                 </div>
             </div>
-
-            <div className='border-2 h-12 border-[#2C9CF0] w-8 mt-2 md:mt-0'>
-                <Image className='ml-3 mt-3' src={icon2} alt='icon' />
+            <div className='hidden md:block border-2 lg:mt-[280px] md:mt-[300px]  mr-20 h-12 border-[#2C9CF0] w-8'>
+                <Image className='ml-2 mt-3 ' src={icon2} alt='icon' />
             </div>
         </div>
     );
